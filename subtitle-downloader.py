@@ -44,7 +44,7 @@ def sub_downloader(file_path):
 
         if not os.path.exists(root + ".srt"):
             headers = {'User-Agent': 'SubDB/1.0 (subtitle-downloader/1.0; http://github.com/manojmj92/subtitle-downloader)'}
-            url = "http://api.thesubdb.com/?action=download&hash=" + get_hash(file_path) + "&language=en"
+            url = "http://api.thesubdb.com/?action=download&hash=" + get_hash(file_path) + "&language=es"
             if PY_VERSION == 3:
                 req = urllib.request.Request(url, None, headers)
                 response = urllib.request.urlopen(req).read()
